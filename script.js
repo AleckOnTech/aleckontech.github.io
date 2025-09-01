@@ -1,5 +1,5 @@
 /* Initialize Date */
-        const reldate = new Date("2025-10-08T20:00:00");
+        const reldate = new Date(Date.UTC(2025, 9, 8, 12, 0, 0));
         let CDate = new Date();
     
         console.log(reldate + CDate); // Debug Print
@@ -31,10 +31,12 @@
  
         window.onload = () =>{
             /* PRINT THE SECOND LINE ON RELEASE DATE*/
-            document.getElementById("second_line").innerHTML = "Website will be released and hosted on " + reldate;
+            document.getElementById("second_line").innerHTML = "Website will be released and hosted on October 8, 2025 at 12:00pm (GMT) or on your timezone: <br>" + reldate;
           
-            /* PRINT THE THIRD LINE ON TIMER RELEASE*/
-            setInterval(() => {
+            document.getElementById("third_line").innerHTML = "Timer until release: " + timerLoop()
+            
+        }  
+        /* PRINT THE THIRD LINE ON TIMER RELEASE*/
+        setInterval(() => {
             document.getElementById("third_line").innerHTML = "Timer until release: " + timerLoop()
             }, 1000);
-        }  
