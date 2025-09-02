@@ -1,6 +1,14 @@
 /* Initialize Date */
-        const reldate = new Date(Date.UTC(2025, 9, 8, 12, 0, 0));
-        let CDate = new Date();
+        const reldate = new Date(Date.UTC(2025, 9, 8, 12, 0, 0)); // Release Date in UTC
+        let CDate = new Date(); // Current Date & TIme
+        const options = { // Configuration to show the release date in Local Time
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+            hour: "numeric",
+            minute: "2-digit",
+            hour12: true
+        };
     
         console.log(reldate + CDate); // Debug Print
 
@@ -24,19 +32,21 @@
             if (distance < 0) {
                 return "00 Days, 00 Hours, 00 Minutes, 00 Seconds"
             } else {
-                return days + " Days, " + padZero(hours) + " Hours, " + padZero(minutes) + " Minutes, "+  padZero(seconds) + " Seconds ";
+                return padZero(days) + " Days, " + padZero(hours) + " Hours, " + padZero(minutes) + " Minutes, "+  padZero(seconds) + " Seconds ";
             }
         }
         
  
         window.onload = () =>{
             /* PRINT THE SECOND LINE ON RELEASE DATE*/
-            document.getElementById("second_line").innerHTML = "Website will be released and hosted on October 8, 2025 at 12:00pm (GMT) or on your timezone: <br>" + reldate;
+            document.getElementById("second_line").innerHTML = "Website will be released and hosted on October 8, 2025 at 12:00pm (GMT) <br>or on your timezone: " + reldate.toLocaleString("en-US", options);;
           
             document.getElementById("third_line").innerHTML = "Timer until release: " + timerLoop()
             
         }  
         /* PRINT THE THIRD LINE ON TIMER RELEASE*/
         setInterval(() => {
-            document.getElementById("third_line").innerHTML = "Timer until release: " + timerLoop()
+                document.getElementById("third_line").innerHTML = "Timer until release: " + timerLoop()
+                console.log("Timer until release: " + timerLoop() + " | From AleckOnTech's Site
             }, 1000);
+
