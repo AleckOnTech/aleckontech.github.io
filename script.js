@@ -45,9 +45,10 @@
         }  
         /* PRINT THE THIRD LINE ON TIMER RELEASE*/
         setInterval(() => {
-                document.getElementById("third_line").innerHTML = "Timer until release: " + timerLoop()
-                console.log("Timer until release: " + timerLoop() + " | From AleckOnTech's Site")
+                document.getElementById("third_line").innerHTML = "Timer until release: " + timerLoop();
+                console.log("Timer until release: " + timerLoop());
             }, 1000);
+
 
 
 
