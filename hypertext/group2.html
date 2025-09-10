@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypertext Article on How to make Hypertext</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: black;
+            color: black;
+            margin: 0px;
+            padding: 0px;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .sidebar { /* TABLE OF CONTENTS CSS */
+            position: sticky;
+            margin: 30px;
+            margin-right: 0px;
+            top: 0;
+            left: 0;
+            width: 220px;
+            height: 100%;
+            background-color: white;
+            color: black;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centers contents vertically */
+            font-size: 18px;
+            border: 10px #686868 solid;
+            border-radius: 15px;
+            }
+
+            .sidebar h2 {
+            font-size: 25px;
+            margin-bottom: 15px;
+            text-align: center;
+            }
+
+            .sidebar ul {
+            list-style: none;
+            padding: 0;
+            }
+
+            .sidebar ul li {
+            margin: 8px 0;
+            }
+
+            .sidebar a:link {
+                color: blue;
+                text-decoration: none;
+            }
+            
+            .sidebar a:visited {
+                color: blue;
+            }
+            .sidebar a:hover {
+                color: #b700ff;
+                text-decoration: underline;
+            } 
+            /*TABLE OF CONTENTS ENDS*/
+            
+            /*BODY STARTS */
+        .parent{
+            background-color: white;
+            padding-bottom: 80px;
+            border: 10px solid;
+            border-color: #686868;
+            border-radius: 15px;
+            width: 130vh;
+            margin: 30px;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .parent h1 {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .articleBody a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .articleBody a:visited {
+            color: black;
+            text-decoration: none;
+        }
+        .articleBody a:hover {
+            text-decoration: underline;
+        }
+
+
+        .articleHeader{
+            margin: 0px;
+            padding: 25px;
+            padding-bottom: 15px;
+        }
+
+        .articleBody {
+            margin: 0px;
+            padding: 25px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-top: 3px solid black;
+            border-bottom: 3px solid black;
+        }
+
+        .references {
+            padding: 25px;
+            padding-top: 10px
+        }
+
+        .references p:target {
+            background-color: cyan;
+        }
+
+        .boldarea {
+            font-weight: 700;
+            font-size: 20;
+        }
+
+        .codePreview {
+            background-color: yellow;
+            font-family: cascadia code, consolas, monospace;
+            width: 70vh;
+            padding-left: 25px;
+        }
+
+        .outputPreview {
+            margin-top: 5px;
+            padding-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="sidebar">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#top">(TOP)</a></li>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#whatAreHypertext">What is Hypertext?</a></li>
+                <li><a href="#whyItsUsed">Why is it used?</a></li>
+                <li><a href="#howItsMade">How is Hypertext Created?</a></li>
+                <blockquote>
+                    <li><a href="#onHTML">On HTML</a></li>
+                    <li><a href="#onMSWord">On MS Word</a></li>
+                    <li><a href="#onGDocs">On Google Docs</a></li>
+                    <li><a href="#onCanva">On Canva</a></li>
+                </blockquote>
+                <li><a href="#conclusion">Conclusion</a></li>
+                <li><a href="#refs">References</a></li>
+            </ul>
+        </nav>
+    <div class="parent" id="top">
+        <div class="articleHeader">
+            <h1>What is Hypertext and How can we create it?</h1>
+            <blockquote><p><em>
+                <b>Author(s):</b> Alethea Joelle Nicol, Audrie Penecilla, Catherine Sotelo, Chris Aleck Bernal, Jade Chloe De Vera, John Lloyd Dela Cerna, Lindsay Rhian Sanchez, Neithan John Apostol, Robert Ruel IV and Ryza Charize Parane.
+                <br>
+                Published on: September 11, 2025. &emsp; NOTE: THIS IS THE FIRST DRAFT OF THE ARTICLE.
+            </em></p></blockquote>
+        </div>
+        
+        <div class="articleBody">
+            <!--INTRODUCTION-->
+            <div id="intro">
+                <p>&emsp;In today's digital world, most individuals interact with hypertext whenever they use a computer or browse the internet. Hypertext, often referred to as “links,” allows users to move to another section of a document, a different webpage or website. Designed for easy access and organizes information in a way that is simple and user-friendly. This system had become essential for referencing, browsing websites, and connecting information from many different sources.</p>
+
+                <p>This article explains the definition and importance of hypertext and shows how it can be created using different tools, including HTML, Microsoft Word, Google Docs, and Canva.</p>
+            </div>
+
+            <!--WHAT IS HYPERTEXT-->
+            <div id="whatAreHypertext">
+                <h3>What is Hypertext?</h3>
+                <p> &emsp;
+                    Hypertext is a digital text format that contains links to other texts or resources, allowing for non-linear navigation through information <a href="#cite5">(Wikipedia, 2025a;</a> <a href="#cite2">Haynes, 2023)</a>. Unlike traditional linear text, which is read sequentially, hypertext provides a web-like structure of interconnected information, enabling users to access relevant content immediately via clickable references. This interactivity forms the foundation of the modern World Wide Web <a href="#cite7">(W3C, n.d.;</a> <a href="#cite1">Link-Assistant, n.d.)</a>.
+                </p>
+                <p> &emsp;
+                    The primary characteristic of hypertext is its embedded links, known as hyperlinks, which connect text to additional information either within the same document or across multiple documents <a href="#cite3">(MDN Web Docs, 2025a)</a>. These hyperlinks facilitate a dynamic reading experience, allowing users to explore related topics at their own pace rather than following a predetermined sequence. Thus, hypertext is not merely text but a framework for organizing and accessing knowledge interactively <a href="#cite6">(Wikipedia, 2025b)</a>.
+                </p>
+                <p> &emsp;
+                    Hypertext can encompass various forms of content, including text, images, and multimedia elements, all interconnected through hyperlinks <a href="#cite4">(MDN Web Docs, 2025b)</a>. The distinction between hypertext and hyperlinks is critical for understanding web-based information structures. Hypertext refers to the text itself that contains links, whereas a hyperlink is the actual clickable reference that connects one document to another <a href="#cite5">(Wikipedia, 2025a;</a> <a href="#cite3">MDN Web Docs, 2025a)</a>. Together, they form the backbone of interactive and navigable digital documents.
+                </p>
+            </div>
+
+            <!--WHY ITS USED-->
+            <div id="whyItsUsed">
+                <h3>Why is it used?</h3>
+                <p>&emsp; 
+                    Hypertext is used primarily to facilitate non-linear access to information, allowing users to navigate quickly between related topics or documents <a href="#cite6">(Wikipedia, 2025b;</a> <a href="#cite7">W3C, n.d.)</a>. Unlike traditional printed text, which requires sequential reading, hypertext enables a dynamic and interactive exploration of content, improving efficiency in learning, research, and information retrieval <a href="#cite2">(Haynes, 2023)</a>.
+                </p>
+                <p>&emsp; 
+                    Hypertext also supports the interconnection of diverse content types, such as text, images, videos, and other multimedia, creating a rich, multi-dimensional information environment <a href="#cite4">(MDN Web Docs, 2025b)</a>. By embedding hyperlinks within text, hypertext allows users to access supporting materials, definitions, or related topics immediately, reducing the need to search manually for additional resources.
+                </p>
+                <p>&emsp;
+                    Moreover, hypertext underpins the functionality of the World Wide Web, enabling websites to form a connected network of information. This interconnected structure supports knowledge sharing, collaborative learning, and efficient navigation across large datasets, making it an essential tool for digital communication, education, and research <a href="#cite1">(Link-Assistant, n.d.;</a> <a href="#cite3">MDN Web Docs, 2025a)</a>.
+                </p>
+            </div>
+
+            <!--HOW ITS MADE-->
+            <div id="howItsMade">
+                <h3>How is Hypertext created?</h3>
+                <p>&emsp;Hypertext can be created in differnet places, but this article focuses on four common tools: Hypertext Markup Language (HTML), Microsoft Word, Google Docs and Canva.</p>
+                <!-- ON HTML SECTION-->
+                    <div id="onHTML">
+                        <p class="boldarea">On Hypertext Markup Language (HTML)</p>
+                        <p>In HTML, hyperlinks is created by wrapping the text or other content inside an 
+                            <span class="codePreview" style="padding: 0px; font-weight: 700;">&lt;a&gt;</span>
+                            (anchor) tag, with the 
+                            <span class="codePreview" style="padding: 0px; font-weight: 700;">href</span>
+                            attribute specifying the destination URL or section within the same page. <a href="#cite4">(MDN Web Docs, 2025b)</a></p>
+                        <p>Example of a basic link</p>
+                        <p class="codePreview">&lt;a href="http://google.com"&gt;Go to Google!&lt;/a&gt;</p>
+
+                        <p>Example of an Internal Bookmark Link</p>
+                        <p class="codePreview">
+                            &lt;a href="#section1"&gt;Go to Section 1&lt;/a&gt; <br> &lt;p id="section1"&gt;Content of Section 1&lt;/p&gt;
+                        </p>
+
+                        <p>Note that links are not limited to just plain text. Here is an example of a link using within a header.</p>
+                        <p class="codePreview">
+                            &lt;a href="https://facebook.com"&gt;<br>
+                            &emsp;&lt;h2&gt;https://facebook.com"&lt;/h2&gt;<br>
+                            &lt;/a&gt;
+                        </p>
+                        <span>Here is the output:</span>
+                        <a href="http://facebook.com">
+                            
+                            <h2 class="outputPreview">http://facebook.com</h2>
+                        </a>
+                        <p class="boldarea">Resources:</p>
+                        <ul>
+                            <li><a href="#cite14">GeeksforGeeks (n.d)</a></li>
+                            <li><a href="#cite4">MDN Web Docs (2025)</a></li>
+                            <li><a href="#cite18">W3Schools (n.d.)</a></li>
+                        </ul> <br>
+                    </div>
+
+                    <!--ON MS WORD SECTION-->
+                    <div id="onMSWord">
+                        <p class="boldarea">On Microsoft Word</p>
+                        <p>In Microsoft Word, hyperlinks can be added to text, images, or shapes.</p>
+                        <ol>
+                            <li>Highlight the text or select the object to hyperlink.</li>
+                            <li>Right-click and choose Link, or press Ctrl + K.</li>
+                            <li>Enter the URL or select a location within the document.</li>
+                            <li>Click OK to apply the hyperlink.</li>
+                        </ol>
+                        <p><b>Resources: </b></p>
+                        <ul>
+                            <li><a href="#cite14">Microsoft Support (n.d.-a)</a></li>
+                            <li><a href="#cite15">Microsoft Support (n.d.-b)</a></li>
+                            <li><a href="#cite16">CustomGuide (n.d.)</a></li>
+                        </ul>
+                    </div> <br>
+
+                    <!-- ON GOOGLE DOCS -->
+                    <div id="onGDocs">
+                        <p class="boldarea">On Google Docs</p>
+                        <p>In Google Docs, hyperlinks are added in a similar manner.</p>
+                        <ul>
+                            <li>Highlight the text you want to link.</li>
+                            <li>Click Insert > Link, or press Ctrl + K.</li>
+                            <li>Enter the URL or select a heading/bookmark within the document.</li>
+                            <li>Click Apply.</li>
+                        </ul>
+                        <p><b>Resources: </b></p>
+                        <ul>
+                            <li><a href="#cite11">Google Support (n.d)</a></li>
+                            <li><a href="#cite13">Indeed Editorial Team (2025)</a></li>
+                            <li><a href="#cite8">Business Insider</a></li>
+                        </ul>
+                    </div> <br>
+
+                    <!-- ON CANVA -->
+                    <div id="onCanva">
+                        <p class="boldarea">On Canva</p>
+                        <p>In Canva, hyperlinks can be added to text, images, or shapes in a design.</p>
+                        <p><b>Steps: </b></p>
+                        <ol>
+                            <li>Select the element to hyperlink.</li>
+                            <li>Click the Link icon in the toolbar.</li>
+                            <li>Enter the URL or select a page within the design.</li>
+                            <li>Click Apply.</li>
+                        </ol>
+                        <p><b>Resources: </b></p>
+                        <ul>
+                            <li><a href="#cite12">Canva Help Center (n.d.)</a></li>
+                            <li><a href="#cite10">FaithOla (n.d.)  </a></li>
+                            <li><a href="#cite17">The Blog Social (n.d.)</a></li>
+                        </ul>
+                    </div>
+            </div>
+
+            <!-- CONCLUSION -->
+            <div id="conclusion">
+                <h3>Conclusion</h3>
+                <p>&emsp; Hypertext is a foundational component of the digital information ecosystem, enabling non-linear navigation and interactive access to content. By embedding hyperlinks within text, hypertext allows users to efficiently explore related documents, multimedia, and web resources, creating a dynamic and interconnected network of information <a href="#cite6">(Wikipedia, 2025b;</a> <a href="#cite3">MDN Web Docs, 2025a)</a>. Its use enhances knowledge accessibility, supports learning and research, and underpins the functionality of the World Wide Web <a href="#cite7">(W3C, n.d.;</a> <a href="#cite2">Haynes, 2023</a>).</p>
+
+                <p>&emsp; Creating hypertext involves structuring content so that it contains clearly defined links to relevant resources, whether through text, images, or other digital media <a href="#cite4">(MDN Web Docs, 2025b;</a> <a href="#cite1">Link-Assistant, n.d.)</a>. The process emphasizes clarity, accessibility, and logical organization, ensuring that users can navigate information intuitively.</p>
+
+                <p>&emsp; In conclusion, hypertext not only revolutionizes how information is consumed but also facilitates a flexible and user-directed approach to learning and exploration. Understanding both the concept of hypertext and the methods for creating it is essential for anyone seeking to engage effectively with digital content and the modern web.</p>
+            </div>
+        </div>
+
+        <div class="references">
+            <!-- CITATION ID 1-7 WILL BE THE GENERAL INFORMATION -->
+            <!-- CITATION 8- WILL BE RESOURCES ON HOW TO MAKE HYPERTEXT-->
+            <h3 id="refs">References: (APA 7th Edition)</h3>
+            <blockquote>
+                <p id="cite8">Business Insider. (n.d.). How to hyperlink in Google Docs. <a href="https://www.businessinsider.com/guides/tech/how-to-hyperlink-in-google-docs">https://www.businessinsider.com/guides/tech/how-to-hyperlink-in-google-docs</a></p>
+
+                <p id="cite9">Canva Help Center. (n.d.). <em>Add hyperlinks.</em> <a href="https://www.canva.com/help/hyperlinks/">https://www.canva.com/help/hyperlinks/</a></p>
+
+                <p id="cite16">CustomGuide. (n.d.). How to hyperlink in Word. <a href="https://www.customguide.com/word/how-to-hyperlink-in-word">https://www.customguide.com/word/how-to-hyperlink-in-word</a></p>
+                
+                <p id="cite10">FaithOla. (n.d.). How to hyperlink in Canva. <a href="https://faithola.com/hyperlink-in-canva/">https://faithola.com/hyperlink-in-canva/</a></p>
+                
+                <p id="cite11">GeeksforGeeks. (n.d.). HTML links. <a href="https://www.geeksforgeeks.org/html/html-links/">https://www.geeksforgeeks.org/html/html-links/</a></p>
+
+                <p id="cite12">Google Support. (n.d.). Work with links & bookmarks. <a href="https://support.google.com/docs/answer/45893">https://support.google.com/docs/answer/45893</a></p>
+
+                <p id="cite13">Indeed Editorial Team(2025). How to hyperlink in Google Docs. Indeed. <a href="https://www.indeed.com/career-advice/career-development/how-to-hyperlink-in-google-docs">https://www.indeed.com/career-advice/career-development/how-to-hyperlink-in-google-docs</a></p>
+
+                <p id="cite1">Link-Assistant. (n.d.). <em>Hypertext.</em> SEO Wiki. <a href="https://www.link-assistant.com/seo-wiki/hypertext/">https://www.link-assistant.com/seo-wiki/hypertext/</a></p>
+
+                <p id="cite2">Haynes, A., (2023). <em>What is hypertext?</em> Loganix. <a href=" https://loganix.com/what-is-hypertext/">https://loganix.com/what-is-hypertext/</a></p>
+
+                <p id="cite3">MDN Web Docs. (2025a). <em>What are hyperlinks?</em> <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_are_hyperlinks">https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_are_hyperlinks</a></p>
+
+                <p id="cite4">MDN Web Docs. (2025b). <em>Creating links.</em> <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Creating_links">https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Creating_links</a></p>
+
+                <p id="cite14">Microsoft Support. (n.d.-a). Create or edit a hyperlink. <a href="https://support.microsoft.com/en-us/office/create-or-edit-a-hyperlink-5d8c0804-f998-4143-86b1-1199735e07bf">https://support.microsoft.com/en-us/office/create-or-edit-a-hyperlink-5d8c0804-f998-4143-86b1-1199735e07bf</a></p>  
+
+                <p id="cite15">Microsoft Support. (n.d.-b). Add hyperlinks to a location within the same document. <a href="https://support.microsoft.com/en-us/office/add-hyperlinks-to-a-location-within-the-same-document-1f24fc4f-7ccd-4c5f-87e1-9ddefb672e0e">https://support.microsoft.com/en-us/office/add-hyperlinks-to-a-location-within-the-same-document-1f24fc4f-7ccd-4c5f-87e1-9ddefb672e0e</a></p>
+
+                <p id="cite17">The Blog Social. (n.d.). Guide: Adding clickable links in Canva. <a href="https://www.theblogsocial.com/guide-adding-clickable-links-in-canva/">https://www.theblogsocial.com/guide-adding-clickable-links-in-canva/</a></p>
+
+                <p id="cite5">Wikipedia. (2025a). <em>Hyperlink.</em> <a href="https://en.wikipedia.org/wiki/Hyperlink">https://en.wikipedia.org/wiki/Hyperlink</a></p>
+
+                <p id="cite6">Wikipedia. (2025b). <em>Hypertext.</em> <a href="https://en.wikipedia.org/wiki/Hypertext">https://en.wikipedia.org/wiki/Hypertext</a></p>
+
+                <p id="cite7">W3C. (n.d.). <em>What is Hypertext?</em> <a href="https://www.w3.org/WhatIs.html">https://www.w3.org/WhatIs.html</a></p>
+
+                <p id="cite18">W3Schools. (n.d.). HTML links. <a href="https://www.w3schools.com/html/html_links.asp">https://www.w3schools.com/html/html_links.asp</a></p>
+            </blockquote>
+        </div>
+    </div>
+</body>
+</html>
