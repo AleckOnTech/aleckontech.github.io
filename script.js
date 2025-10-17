@@ -1,5 +1,5 @@
 /* Initialize Date */
-        const reldate = new Date(Date.UTC(2025, 9, 18, 12, 0, 0)); // Release Date in UTC
+        const reldate = new Date(Date.UTC(2025, 9, 19, 8, 0, 0)); // Release Date in UTC
         let CDate = new Date(); // Current Date & TIme
         const options = { // Configuration to show the release date in Local Time
             year: "numeric",
@@ -10,8 +10,6 @@
             hour12: true
         };
     
-        console.log(reldate + CDate); // Debug Print
-
         // LEADING ZERO FUNCTION
         function padZero(n) {
             return n.toString().padStart(2, "0");
@@ -40,13 +38,14 @@
         window.onload = () =>{
             /* PRINT THE SECOND LINE ON RELEASE DATE*/
             document.getElementById("title_display").innerHTML = "Site Under Development | AleckOnTech's Site"
-            document.getElementById("second_line").innerHTML = "Website will be released and hosted on October 18, 2025 at 12:00pm (GMT) <br>or on your timezone: " + reldate.toLocaleString("en-US", options);;
+            document.getElementById("second_line").innerHTML = "Website will be released and hosted on October 19, 2025 at 12:00pm (GMT) <br>or on your timezone: " + reldate.toLocaleString("en-US", options);;
             document.getElementById("third_line").innerHTML = "Timer until release: " + timerLoop()
         }  
         /* PRINT THE THIRD LINE ON TIMER RELEASE*/
         setInterval(() => {
                 document.getElementById("third_line").innerHTML = "Timer until release: " + timerLoop();
             }, 1000);
+
 
 
 
