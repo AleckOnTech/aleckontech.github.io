@@ -1,5 +1,5 @@
 /* Initialize Date */
-        const reldate = new Date(Date.UTC(2025, 9, 19, 8, 0, 0)); // Release Date in UTC
+        const reldate = new Date(Date.UTC(2025, 9, 20, 12, 0, 0)); // Release Date in UTC
         let CDate = new Date(); // Current Date & TIme
         const options = { // Configuration to show the release date in Local Time
             year: "numeric",
@@ -45,6 +45,7 @@
         setInterval(() => {
                 document.getElementById("third_line").innerHTML = "Timer until release: " + timerLoop();
             }, 1000);
+
 
 
 
