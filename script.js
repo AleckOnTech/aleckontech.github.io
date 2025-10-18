@@ -38,13 +38,14 @@
         window.onload = () =>{
             /* PRINT THE SECOND LINE ON RELEASE DATE*/
             document.getElementById("title_display").innerHTML = "Site Under Development | AleckOnTech's Site"
-            document.getElementById("second_line").innerHTML = "Website will be released and hosted on October 19, 2025 at 12:00pm (GMT) <br>or on your timezone: " + reldate.toLocaleString("en-US", options);;
+            document.getElementById("second_line").innerHTML = "Website will be released and hosted on October 20, 2025 at 12:00pm (GMT) <br>or on your timezone: " + reldate.toLocaleString("en-US", options);;
             document.getElementById("third_line").innerHTML = "Timer until release: " + timerLoop()
         }  
         /* PRINT THE THIRD LINE ON TIMER RELEASE*/
         setInterval(() => {
                 document.getElementById("third_line").innerHTML = "Timer until release: " + timerLoop();
             }, 1000);
+
 
 
 
