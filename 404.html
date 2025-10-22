@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nav-foot.css" type="text/css">
+    <style>
+        body {
+            margin: 0;
+            
+            background-image: url('css/Background.png');
+            background-position-y: 50px;
+            background-position-x:center;
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-color: #0e0e0e;
+        }
+
+        /* Content */
+
+        .content {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding-top: 40px;
+            width: 80%;
+            height: 310px;
+            background-color: white;
+            border: #0e0e0e solid 2px;
+        }
+
+        .subcontent {
+            margin: 15px;
+        }
+
+        #fact-of-the-day {
+          border: black solid 1px;
+          padding: 10px;
+        }
+        #fact-of-the-day h3 {
+         margin:0;
+         }
+
+         /* Nav Bar */
+            .navbar {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            font-weight: 600;
+            }
+
+            .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 15px 15px;
+            text-decoration: none;
+            font-size: 17px;
+            }
+
+            .topright {
+            float: right;
+            }
+
+            .navbar a:hover {
+            background: #ddd;
+            color: black;
+            }
+
+            /*Footer*/
+            footer {
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 6%;
+            padding-bottom: 3%;
+            background-color: #0e0e0e;
+            }
+
+            footer table, tr, td, th {
+            border: 2px solid white;
+            padding: 3px;
+            }
+
+    </style>
+    <title>404 not found</title>
+</head>
+
+<body>
+    <!--Navigatiion Bar-->
+    <div class="navbar">
+        <a href="#" id="generate">AleckOnTech's Site</a>
+        <a href="index.html" title="Home">Home</a>
+        <a href="#" onclick="library()" title="Library">Library</a>
+        <a href="#" onclick="archives()" title="Archives">Archives</a>
+        <a href="#" onclick="games()" title="Games">Games</a>
+        <a href="#" onclick="about()" title="About">About</a>
+        <div class="topright">
+            <a href="#" onclick="register()">Register</a>
+            <a href="login.html">Login</a>
+            <a href="settings.html">settings</a>
+        </div>
+    </div>
+<!--Content-->
+    <div class="content"><div class="subcontent">
+        
+        <h1>404 not found</h1>
+        <p>The file that you were looking for was not found.</p>
+        <div id="fact-of-the-day">
+            <h3>Fact of the day!</h3>
+            <p id="rngfax"><noscript>Sorry, JavaScript is disabled on generating Facts</noscript></p>
+        </div>
+    </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <table>
+            <tr><th colspan="3">SITE LINKS</th></tr>
+            
+            <tr>
+                <th>History</th>
+                <th></th>
+                <th></th>
+            <tr>
+                <td><a href="">Contact Us!</a></td>
+                <td><a href="">About Us</a></td>
+                <td><a href="">Version History</a></td>
+            </tr>
+
+            <tr>
+                <td><a href="">Contact Us!</a></td>
+                <td><a href="">About Us</a></td>
+                <td><a href="">Version History</a></td>
+            </tr>
+
+            <tr>
+                <td><a href="">Contact Us!</a></td>
+                <td><a href="">About Us</a></td>
+                <td><a href="">Version History</a></td>
+            </tr>
+
+            <tr>
+                <td><a href="">Contact Us!</a></td>
+                <td><a href="">About Us</a></td>
+                <td><a href="">Version History</a></td>
+            </tr>
+        </table>
+    </footer>
+    <!--Script (will be heavily relied on later)-->
+    <script src="script/index-behaviour.js"></script>
+    <script>
+        //Quotes or Facts of the day (if website loads)
+        //Final JavaScript
+const generateQuote = function() {
+    const quotes = [
+    {quote: "Website Down >:C",},
+    {quote: ":null", },
+    {quote: "You don't have the permission to access the Web Page.",},
+    {quote: "Please report this to the server administrator.",},
+    {quote: "Don't trust fake links even if it looked real",},
+    {quote: "Every human life is worth the same, and worth saving.",},
+    {quote: "Have a biscuit, Potter.",},
+    {quote: "Happiness can be found even in the darkest of times, if one only remembers to turn on the light.",},
+    {quote: "e11",},
+    //{quote: "Socks are Dobby’s favorite, favorite clothes, sir!",},
+    //{quote: "Socks are Dobby’s favorite, favorite clothes, sir!",},
+    //{quote: "Socks are Dobby’s favorite, favorite clothes, sir!",},
+    //{quote: "Socks are Dobby’s favorite, favorite clothes, sir!",},
+    {quote: "a11",},
+    {quote: "<i>\"The webstie was down for maintenance. Please contact the Server administrator if you believed this is an error.\"</i>",},
+    // One of my favourite error messages
+    {quote: "I reject you kasi sobra kana tsaka pwede ba itigil mo na pagkakagusto saakin ako yung napapahiya eh lagi mo nalang ako sinisigaw sa klase alam mo ba kung gaano nakakahiya yun?? Syempre hindi puro ka lang tawa katulad kanina ginulo mo yung mga upuan bulag ka ba para di makitang maayos na yun?? Call me rude pero napapahiya na ako masyado sa ginagawa mo.",},
+    ];
+// Generate to Console and Box
+    let arrayIndex = Math.floor(Math.random() * quotes.length);
+    document.getElementById("rngfax").innerHTML = quotes[arrayIndex].quote;
+    console.log(quotes[arrayIndex].quote);
+    }
+    window.onload = function() {
+        generateQuote();
+        document.getElementById("generate").addEventListener('click', generateQuote);
+    }
+</script>
+
+</body>
+</html>
