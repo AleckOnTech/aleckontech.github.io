@@ -1,42 +1,88 @@
 <!DOCTYPE html>
 <!-- ✨ Built with Framer • https://www.framer.com/ -->
-<!-- EXPECTED REL DATE ON OCT 8, 2025; AND DEVELOPMENT STARTED AT SEPTEMBER 1 2025-->
 
 <html lang="en">
 <head>
+    <!--METADATA-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="title_display">Website Under Construction</title>
-    <style>
-        body{
-            background-color: black; 
-            color: white; 
-            font-family: cascadia code, monospace;
-        }
-        #third_line {
-            font-size: 25px;
-        }
-        .devnote {
-            font-size: 18px;
-            border: 2px dashed white;
-            padding: 12px;
-        }
-    </style>
+    <meta name="Author" content="AleckOnTech">
+    <!--CSS FILES-->
+    <link rel="stylesheet" href="mains.css">
+    <link rel="stylesheet" href="style.css">
+    <title>(Public ALPHA) AleckOnTech's Site</title>
+    <!--Parameters Script-->
+    <script src="assets/params.js"></script>
 </head>
+<body>
+    <!-- HEADER NAV BAR -->
+    <div class="topNavBar">
+        <div class="navBarLeft">
+            <a href="http://aleckontech.github.io/index.html">Home</a>
+            <a href="http://aleckontech.github.io/projects">Projects</a>
+            <a href="http://aleckontech.github.io/contact.html">Contact</a>
+            <a href="http://aleckontech.github.io/about">About</a>
+        </div>
+        <!-- BUTTON TO CHANGE THE LOOK OF WEBSITE (later with saving)-->
+            <button id="changeStyles">Change BG/FG</button>
+    </div>
+    <script src="main.js"></script>
 
-<body style="background-color: black; color: white; font-family: cascadia code, monospace;">
-    <h1>This is my website. Under construction....</h1>
-    <h2 id="second_line"></h2>
-    <p id="third_line"></p>
-    <p class="devnote">
-        <em>Developer Note: </em><br>
-        Release Date will be delayed to October 18, 2025 to make room for the developer's (which is me) time for academics and time for website development. I apologize for the delay because October 8 was a special day for me because it's "Dev day" but I have to give up on releasing to that date. for the reasons mentioned above. 
-        <br> <br> <b>EXPECT ANOTHER DELAY FOR ANOTHER DAY, WHICH IS OCTOBER 25, 2025!</b>
-        <br> 
-        <br> <br>Sorry for another delay!
-        <br>-AleckOnTech
-    </p>
+    <!-- Contents -->
+    <div class="contents">
+        <h1>Welcome to my Website!</h1>
+        <span>NOTE: This website is in alpha. There will possibly be bugs and missing contents on my website.</span>
 
-    <script src="https://aleckontech.github.io/script.js"></script>
+        <div class="contentBox header">
+            <div class="aboutMe">
+                <h2>About Me!</h2>
+                <p>Hello, I am Chris, aka AleckOnTech. I am an aspiring developer</p>
+                <p>I do start coding back in 2022, which is for an extracurrricular activity. My goal is to learn how to code with the C Programming Language and a low level language.</p>
+                <p>I do sometimes want to be a game developer, which is for a reason on my interest on low level computer stuff.</p>
+            </div>
+            <div class="socialLinks">
+                <h2>Social Links</h2>
+                <ul>
+                    <li>Github: <a href="http://github.com/aleckontech">@aleckontech</a></li>
+                    <li>Twitter/X: <a href="http://x.com/aleckontech">@aleckontech</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="contentBox projects">
+            <h2>My Projects</h2>
+            <p>WIP</p>
+        </div>
+        <div class="contentBox devlog">
+            <h2>Website Developer Logs.</h2>
+            <dl>
+                <dt>2025-10-25</dt>
+                <dd>
+                    <p>Website Released to the Public!</p>
+                </dd>
+                <dt>2025-10-24</dt>
+                <dd>
+                    <p>Started adding all the contents and debugging the website. (and fixing the responsive problem)</p>
+                </dd>
+                <dt>2025-10-23</dt>
+                <dd>
+                    <p>Fixing the issue with the navbar and the website contents.</p>
+                </dd>
+                <dt>2025-10-22</dt>
+                <dd>
+                    <p>Completed the Change BG/FG Button and now making the contents for the homepage, contact, and about page.</p>
+                </dd>
+            </dl>
+        </div>
+    </div>
+ 
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>
+            <span id="versionNumber"></span> |
+            Copyright &copy; 2025, AleckOnTech.
+        </p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

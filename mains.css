@@ -1,0 +1,78 @@
+/*Standard style.css to not have conflicts with the other files.*/
+:root { 
+    /*For personalization using the Change BG/FG Button*/
+    --bgColor: black;
+    --fgColor: White;
+}
+
+body {
+    background-color: var(--bgColor); /*BE A VARIABLE FOR PERSONALIZATION*/
+    color: var(--fgColor);/*BE A VARIABLE FOR PERSONALIZATION*/
+    margin: 0px;
+    font-family: cascadia code, consolas, monospace;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.topNavBar {
+    background-color: var(--bgColor);
+    margin: 0px;
+    position: sticky;
+    font-size: 25px;
+    border-bottom: 5px dashed; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+}
+.navBarLeft {
+    display: flex;
+    flex-wrap: wrap;
+}
+.navBarLeft a{
+    color: inherit;
+    text-decoration: none;
+    padding: 12px;
+}
+
+/*Change the visited color*/
+.navBarLeft a:visited {
+    color: inherit;
+}
+/*Change the color on mouse hover*/
+.navBarLeft a:hover {
+    background-color: #4f4f4f;
+}
+
+/*Button Personalization*/
+#changeStyles { 
+    background-color: var(--bgColor);
+    border: 3px solid;
+    border-color: var(--fgColor);/* BE A VARIABLE FOR PERSONALIZATION*/
+    color: inherit;
+    font-family: inherit;
+    font-size: 20px;
+    padding: 3px;
+    padding-inline: 15px;
+    margin-right: 12px
+}
+#changeStyles:hover {
+    background-color: #4e4e4e;
+}
+
+#changeStyles:active {
+    background-color: #aaaaaa;
+}
+
+.footer {
+    margin-top: 20px;
+    padding: 5px;
+    border-top: var(--fgColor) dashed 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 50px;
+    align-items: center;
+}
